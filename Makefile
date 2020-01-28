@@ -17,9 +17,9 @@ LIBRARIES = -L. -L$(SYSTEMC_HOME)/$(LINUXLIB) -lsystemc -lm
 
 RPATH = -Wl,-rpath=$(SYSTEMC_HOME)/$(LINUXLIB)
 
-PROGRAM = mux.x
-SRCS    =  cpa.cpp csa.cpp mux_main.cpp
-OBJS    =  cpa.o csa.o mux_main.o
+PROGRAM = mul.x
+SRCS    =  cpa.cpp csa.cpp mul.cpp mul_main.cpp
+OBJS    =  cpa.o csa.o mul.o mul_main.o
 
 all : $(PROGRAM)
 

@@ -14,8 +14,8 @@ SC_MODULE(csa) {
 
     SC_CTOR(csa) {
         SC_METHOD(csa_method);
-        dont_initialize();
-        sensitive << clk.pos();
+        //dont_initialize();
+        sensitive << a_in << b_in << sum_in << c_in;
     }
 };
 

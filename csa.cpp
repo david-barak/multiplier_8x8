@@ -8,7 +8,7 @@ void csa :: csa_method() {
     b = b_in.read();
     sumin = sum_in.read();
     carryin = c_in.read();
-
+    
     // CSA Logic
     andab = a&b;
     sumout = carryin ^ (andab ^ sumin);
@@ -48,7 +48,7 @@ void make_csa() {
     csa.c_out(carryout);
 
     // Create Trace File and Map Signals
-    tf = sc_create_vcd_trace_file("cpa_trace");
+    tf = sc_create_vcd_trace_file("csa_trace");
     tf->set_time_unit(1, SC_NS);
     sc_trace(tf, a, "A");
     sc_trace(tf, b, "B");
