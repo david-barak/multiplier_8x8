@@ -116,8 +116,10 @@ SC_MODULE(mul) {
             cpaArray[i]->sum_out(p_out[bitL+i]);
         }
 
-        SC_METHOD(getProduct);
+        SC_METHOD(mulInit);
         //dont_initialize();
+        sensitive << clk.neg();
+        SC_METHOD(getProduct);
         sensitive << clk.neg();
 
 

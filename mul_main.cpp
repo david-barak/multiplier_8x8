@@ -71,15 +71,11 @@ void startMUL() {
         }
     }
 
-    
-    mul.mulInit();
     for (i = 0; i < time; i++) {
         
         sc_start(1, SC_NS);
        
     }
-
-     mul.getProduct();
 
     anum = boolToInt(a, 8);
     bnum = boolToInt(b, 8);
