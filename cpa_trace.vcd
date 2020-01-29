@@ -1,5 +1,5 @@
 $date
-     Jan 26, 2020       13:37:38
+     Jan 29, 2020       10:55:08
 $end
 
 $version
@@ -13,10 +13,9 @@ $end
 $scope module SystemC $end
 $var wire    1  aaaaa  A       $end
 $var wire    1  aaaab  B       $end
-$var wire    1  aaaac  Sum_In       $end
-$var wire    1  aaaad  Carry_In       $end
-$var wire    1  aaaae  Sum_Out       $end
-$var wire    1  aaaaf  Carry_Out       $end
+$var wire    1  aaaac  Carry_In       $end
+$var wire    1  aaaad  Sum       $end
+$var wire    1  aaaae  Carry_Out       $end
 $upscope $end
 $enddefinitions  $end
 
@@ -30,78 +29,38 @@ $dumpvars
 0aaaac
 0aaaad
 0aaaae
-0aaaaf
 $end
 
 #10
 1aaaac
-1aaaae
+1aaaad
 
 #20
+1aaaab
 0aaaac
-1aaaad
 
 #30
 1aaaac
-0aaaae
-1aaaaf
-
-#40
-1aaaab
-0aaaac
 0aaaad
-0aaaaf
-
-#50
-1aaaac
 1aaaae
 
-#60
-0aaaac
-1aaaad
-
-#70
-1aaaac
-0aaaae
-1aaaaf
-
-#80
+#40
 1aaaaa
 0aaaab
 0aaaac
-0aaaad
-0aaaaf
+1aaaad
+0aaaae
 
-#90
+#50
 1aaaac
+0aaaad
 1aaaae
 
-#100
-0aaaac
-1aaaad
-
-#110
-1aaaac
-0aaaae
-1aaaaf
-
-#120
+#60
 1aaaab
 0aaaac
-0aaaad
-1aaaae
-0aaaaf
 
-#130
+#70
 1aaaac
-0aaaae
-1aaaaf
-
-#140
-0aaaac
 1aaaad
-
-#150
-1aaaac
-1aaaae
 

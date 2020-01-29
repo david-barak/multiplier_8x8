@@ -6,7 +6,7 @@ void cpa :: cpa_method() {
     b = b_in.read();
     carryin = c_in.read();
     sum = carryin ^ (a ^ b);
-    carryout = (a&b) | (b&carryin) | (a&carryin);   
+    carryout = (a & b) | (carryin & (a ^ b));   
     sum_out.write(sum);
     c_out.write(carryout);
 }

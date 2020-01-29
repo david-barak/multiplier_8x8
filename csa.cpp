@@ -4,15 +4,13 @@ void csa :: csa_method() {
     bool a, b, andab, carryin, sumin, carryout, sumout;
 
     // Read Inputs
-    a = a_in.read();
-    b = b_in.read();
-    sumin = sum_in.read();
+    a = a_in.read() & b_in.read();
+    b = sum_in.read();
     carryin = c_in.read();
     
     // CSA Logic
-    andab = a&b;
-    sumout = carryin ^ (andab ^ sumin);
-    carryout = (andab&sumin) | (sumin&carryin) | (andab&carryin); 
+    sumout = (a ^ b) ^ carryin;
+    carryout = (a & b) | (carryin & (a ^ b)); 
 
     // Write Outputs 
     sum_out.write(sumout);
